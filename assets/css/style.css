@@ -2620,6 +2620,8 @@ li {
 }
 .our_projects_one_image img {
   width: 100%;
+  min-height: 100px;
+  height: auto;
 }
 .our_projects_one_icon {
   height: 70px;
