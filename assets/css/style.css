@@ -1172,33 +1172,68 @@ li {
 
 .main-slider .swiper-slide {
   position: relative;
-  background-color: #151414;
+  background-color: #000;
+  padding: 30px 0;
+  height: 100%;
+  
 }
 
 .main-slider .image-layer {
-  position: absolute;
+  /* position: absolute; */
+  /* height: 500px; */
+  /* min-height: 300px; */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  transform-origin: top center;
+display: flex;
+justify-content: center;
+align-items: center;
+  /* transform-origin: top center;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: -webkit-transform 7000ms ease;
   transition: -webkit-transform 7000ms ease;
   transition: transform 7000ms ease;
-  transition: transform 7000ms ease, -webkit-transform 7000ms ease;
+  transition: transform 7000ms ease, -webkit-transform 7000ms ease; */
+}
+.main-slider .image-layer .row{
+  /* position: absolute; */
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  /* width: 500px; */
+  flex: 2;
+  height: 100%;
+}
+.main-slider .image-layer .image-main{
+  height: 100%;
+  flex: 3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
+}
+.main-slider .image-layer .image-main img{
+  width: 100%;
+  max-width: 900px;
+  /* flex: 1; */
+}
+.main-slider .image-layer .row h3,.main-slider .image-layer .row h5{
+  color: #ffffff;
+  margin-top: 20px;
 }
 
 .main-slider .swiper-slide-inner {
   position: relative;
   display: block;
   text-align: center;
-  padding-top: 221px;
-  padding-bottom: 230px;
+  /* padding-top: 105px;
+  padding-bottom: 50px; */
 }
 
 .main-slider p {
@@ -1268,8 +1303,8 @@ li {
   color: var(--thm-black);
 }
 .main-slider .swiper-slide-active .image-layer {
-  -webkit-transform: scale(1.15);
-  transform: scale(1.15);
+  /* -webkit-transform: scale(1.15);
+  transform: scale(1.15); */
 }
 
 .main-slider .swiper-slide-active .thm-btn,
